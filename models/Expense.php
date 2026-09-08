@@ -11,4 +11,13 @@ class Expense {
         return $result->fetch_all(MYSQLI_ASSOC);
     }
 }
+public function getTotal() {
+    $result = $this->conn->query(
+        "SELECT SUM(amount) AS total FROM expenses"
+    );
+
+    $row = $result->fetch_assoc();
+
+    return $row['total'] ?? 0;
+}
 ?>

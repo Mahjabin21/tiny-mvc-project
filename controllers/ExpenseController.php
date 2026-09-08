@@ -8,4 +8,5 @@ class ExpenseController {
         require "views/expense.php";
     }
 }
+$total = $expenseModel->getTotal();
 ?>
