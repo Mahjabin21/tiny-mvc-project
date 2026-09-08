@@ -16,6 +16,12 @@
         <?php endforeach; ?>
     </div>
 
+    <h2>Expense Summary</h2>
+
+<p>
+    <strong>Total Expense: ৳<?= htmlspecialchars($total) ?></strong>
+</p>
+
     <script src="views/script.js"></script>
 </body>
 </html>
